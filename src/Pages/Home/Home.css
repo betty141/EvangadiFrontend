@@ -1,0 +1,156 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.home__container {
+  width: 70vw;
+}
+
+.home__header {
+  height: 100px;
+}
+
+.home__questions h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 0.4em 0;
+}
+
+.home__search input {
+  width: 25vw;
+  color: var(--darkGray);
+  font-size: 16px;
+  height: 50px;
+  padding: 12px 40px;
+  outline: none;
+  border: 0 none;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+.home__search input:focus {
+  border: 1px solid var(--orange);
+}
+
+.home__search form {
+  position: relative;
+}
+
+.home__search .search__icon {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  color: var(--darkGray);
+  z-index: 10;
+}
+
+.home_welcome {
+  width: 200px;
+  height: 150px;
+  background: url("../../../public/wood.png") no-repeat;
+  background-size: contain;
+  position: relative;
+  transition: all 0.5s;
+}
+.home_welcome h2 {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 24%;
+  left: 25%;
+  font-size: 1.1em;
+  color: var(--lightGray);
+  mix-blend-mode: screen;
+}
+
+.home_welcome:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.home__search {
+  width: 100%;
+  justify-content: flex-end;
+  margin: 1em 0;
+  margin-right: 2em;
+}
+
+.home__question--btn a {
+  border-radius: 1em;
+  padding: 1em 2em;
+}
+
+.question__more {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more__btn {
+  width: 60%;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more__btn .btn {
+  font-weight: normal;
+  border-radius: 1.5rem;
+  color: #222;
+  background: transparent;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.more__btn .btn span {
+  background: #eee;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.more__btn .btn  span:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+
+@media screen and (max-width: 600px) {
+  .home__container {
+    width: 85vw;
+  }
+  .home__search {
+    display: block;
+  }
+  .home__search input {
+    width: 100%;
+    font-size: 14px;
+    height: 40px;
+  }
+  .home__search .search__icon {
+    top: 22%;
+  }
+  .home__question--btn a {
+    font-size: 10px;
+  }
+  .home_welcome {
+    width: 130px;
+    height: 130px;
+  }
+  .home_welcome h2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 30%;
+    left: 33%;
+    font-size: 11.5px;
+  }
+  .more__btn .btn span {
+    font-size: 12px;
+  }
+}
